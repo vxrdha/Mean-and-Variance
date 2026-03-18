@@ -92,11 +92,7 @@ sdtDeviation = sqrt(var)
 print(f"Standard Deviation = {sdtDeviation:.3f}")
 ```
 # Output : 
-<img width="490" height="170" alt="image" src="https://github.com/user-attachments/assets/b46d15e1-6735-4afb-94ab-8c7e061cc2a6" />
-<img width="490" height="256" alt="image-1" src="https://github.com/user-attachments/assets/f9d63a4c-88f2-4249-a23e-dd5ce8b426a1" />
-<img width="491" height="175" alt="image-2" src="https://github.com/user-attachments/assets/eb312ade-0c9f-4f70-b8c6-ab4d2de3eb7c" />
-<img width="490" height="201" alt="image-3" src="https://github.com/user-attachments/assets/e7c91dc2-2c36-44b5-ae72-7c412a7e936c" />
-<img width="487" height="164" alt="image-4" src="https://github.com/user-attachments/assets/6aca3573-a901-411c-81f8-6b856e5353b1" />
+<img width="1046" height="612" alt="image" src="https://github.com/user-attachments/assets/77e008cf-22fa-4623-a9af-6cffa34dee79" />
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
