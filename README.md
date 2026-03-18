@@ -49,48 +49,34 @@ It shows the distance of a random variable from its mean. It is calcualted as
 
 # Program :
 #### DEVELOPED BY : **AMSAVARADHAN M**<BR>Reg No : **212225230014**
-
-### Declaring the value of n
-
-```python
+`
 import numpy as np
-n = int(input("Enter the value of n : "))
-print("Value of n =", n)
-```
-
-### Getting the inputs
-
-```python
-InputVal = {}
-for i in range(1, n+1):
-    val = int(input(f"Enter the value no {i} : "))
-    try:
-        InputVal[val] += 1
-    except:
-        InputVal[val] = 1
-print(f"{i} Values Collected Successfully")
-```
-### Finding Mean
-``` python
-mean = 0
-for key, val in InputVal.items():
-    mean += key*(val/n)
-print(f"Mean = {mean:.3f}")
-```
-### Finding Variance
-```python 
-ex2 = 0
-for key, val in InputVal.items():
-    ex2 += ((key**2) * val/n)
-var = ex2 - mean**2
-print(f"Variance : {var:.3f}")
-```
-### Finding Standard Deviation
-```python
-from math import sqrt
-sdtDeviation = sqrt(var)
-print(f"Standard Deviation = {sdtDeviation:.3f}")
-```
+L = [int(i) for i in input("Enter arrival data: ").split()]
+N = len(L)
+M = max(L)
+X = []
+f = []
+for i in range(M + 1):
+    c = 0
+    for j in range(N):
+        if L[j] == i:
+            c += 1 
+    f.append(c)
+    X.append(i)
+sf = np.sum(f)
+p = [f[i] / sf for i in range(M + 1)]
+mean = np.inner(X, p)
+EX2 = np.inner(np.square(X), p)
+var = EX2 - mean**2
+SD = np.sqrt(var)
+print("\nX\tp(x)")
+for i in range(M + 1):
+    if f[i] > 0:   # Only print arrivals that actually occurred 
+        print(f"{X[i]}\t{p[i]:.3f}")
+print(f"\nThe Mean arrival rate is {mean:.3f}")
+print(f"The Variance of arrival from feeder is {var:.3f}")
+print(f"The Standard deviation of arrival from feeder is {SD:.3f}")
+`
 # Output : 
 <img width="1046" height="612" alt="image" src="https://github.com/user-attachments/assets/77e008cf-22fa-4623-a9af-6cffa34dee79" />
 
