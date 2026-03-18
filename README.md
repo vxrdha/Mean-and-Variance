@@ -97,6 +97,7 @@ print(f"Standard Deviation = {sdtDeviation:.3f}")
 <img width="491" height="175" alt="image-2" src="https://github.com/user-attachments/assets/eb312ade-0c9f-4f70-b8c6-ab4d2de3eb7c" />
 <img width="490" height="201" alt="image-3" src="https://github.com/user-attachments/assets/e7c91dc2-2c36-44b5-ae72-7c412a7e936c" />
 <img width="487" height="164" alt="image-4" src="https://github.com/user-attachments/assets/6aca3573-a901-411c-81f8-6b856e5353b1" />
+
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
 
