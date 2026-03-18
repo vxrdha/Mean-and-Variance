@@ -51,34 +51,32 @@ It shows the distance of a random variable from its mean. It is calcualted as
 #### DEVELOPED BY : **AMSAVARADHAN M**<BR>Reg No : **212225230014**
 `
 import numpy as np
-L = [int(i) for i in input("Enter arrival data: ").split()]
-N = len(L)
-M = max(L)
-X = []
-f = []
-for i in range(M + 1):
+L=[int(i) for i in input().split()]
+N=len(L)
+M=max(L)
+x=[]
+f=[]
+for i in range (M+1):
     c = 0
     for j in range(N):
-        if L[j] == i:
-            c += 1 
+        if L[j]==i:
+            c=c+1
     f.append(c)
-    X.append(i)
-sf = np.sum(f)
-p = [f[i] / sf for i in range(M + 1)]
-mean = np.inner(X, p)
-EX2 = np.inner(np.square(X), p)
-var = EX2 - mean**2
-SD = np.sqrt(var)
-print("\nX\tp(x)")
-for i in range(M + 1):
-    if f[i] > 0:   # Only print arrivals that actually occurred 
-        print(f"{X[i]}\t{p[i]:.3f}")
-print(f"\nThe Mean arrival rate is {mean:.3f}")
+    x.append(i)
+Sf=np.sum(f)
+p=[]
+for i in range(M+1):
+    p.append(f[i]/Sf)
+mean=np.inner(x,p)
+Ex2=np.inner(np.square(x),p)
+var=Ex2-mean**2
+sd=np.sqrt(var)
+print(f"The Mean arrival rate is {mean:.3f} ")
 print(f"The Variance of arrival from feeder is {var:.3f}")
-print(f"The Standard deviation of arrival from feeder is {SD:.3f}")
+print(f"The Standard deviation of arrival from feeder is {sd:.3f}")
 `
 # Output : 
-<img width="1046" height="612" alt="image" src="https://github.com/user-attachments/assets/77e008cf-22fa-4623-a9af-6cffa34dee79" />
+<img width="972" height="217" alt="image" src="https://github.com/user-attachments/assets/bd6831b6-ba40-4a81-b8f1-034aa89da6ca" />
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
