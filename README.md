@@ -49,34 +49,10 @@ It shows the distance of a random variable from its mean. It is calcualted as
 
 # Program :
 #### DEVELOPED BY : **AMSAVARADHAN M**<BR>Reg No : **212225230014**
-`
-import numpy as np
-L=[int(i) for i in input().split()]
-N=len(L)
-M=max(L)
-x=[]
-f=[]
-for i in range (M+1):
-    c = 0
-    for j in range(N):
-        if L[j]==i:
-            c=c+1
-    f.append(c)
-    x.append(i)
-Sf=np.sum(f)
-p=[]
-for i in range(M+1):
-    p.append(f[i]/Sf)
-mean=np.inner(x,p)
-Ex2=np.inner(np.square(x),p)
-var=Ex2-mean**2
-sd=np.sqrt(var)
-print(f"The Mean arrival rate is {mean:.3f} ")
-print(f"The Variance of arrival from feeder is {var:.3f}")
-print(f"The Standard deviation of arrival from feeder is {sd:.3f}")
-`
+<img width="1002" height="635" alt="image" src="https://github.com/user-attachments/assets/de60e1f3-9b03-408a-9f45-006d5b7bf5ff" />
+
 # Output : 
-<img width="1002" height="635" alt="image" src="https://github.com/user-attachments/assets/f228521f-b7c3-4961-af88-03a958710dd1" />
+<img width="972" height="217" alt="image" src="https://github.com/user-attachments/assets/3c2d9c95-4272-43ac-ac6e-3319128fe2e5" />
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
